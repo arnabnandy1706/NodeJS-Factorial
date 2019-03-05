@@ -1,10 +1,6 @@
 var express = require("express");
 var app = express();
 
-app.get("/url", (req, res, next) => {
- res.json(["Tony","Lisa","Michael","Ginger","Food"]);
-});
-
 app.get("/randomfact", (req, res, next) => {
  function getRandomNumber() {
  return Math.floor(Math.random() * 100) + 1;
